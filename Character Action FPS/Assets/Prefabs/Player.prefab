@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5851649289818688526}
   - component: {fileID: 5851649289818688529}
   - component: {fileID: 9206876744597728932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -107,10 +107,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5471272511239585448}
-  - component: {fileID: 8430547445466456046}
-  m_Layer: 0
+  - component: {fileID: 3684487794708971490}
+  - component: {fileID: 7922624390184350957}
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +131,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &8430547445466456046
+--- !u!114 &3684487794708971490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290077054653585226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f54c81d9844c0a42891c70f3f4588ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  smooth: 0
+  smoothSpeed: 0
+  jumpForce: 0
+  jumpSpeed: 0
+  jumpDecrease: 0
+  gravity: 9
+--- !u!143 &7922624390184350957
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,7 +162,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
